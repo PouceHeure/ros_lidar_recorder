@@ -1,5 +1,7 @@
 #include <ros_lidar_recorder/recorder.hpp>
 
+// methods 
+
 std::string time_to_string(const ros::Time& time,const std::string& format){
     auto current_time = time.toBoost();
     std::stringstream ss;
@@ -13,10 +15,7 @@ std::string get_default_path_data(){
     return ros::package::getPath("ros_lidar_recorder") + "/data/";
 }
 
-
-
-
-
+// class: Recorder
 
 std::string Recorder::generate_folder_name_from_time(ros::Time time){
         return time_to_string(time,"%Y%m%d-%H_%M_%s") + "/";
@@ -76,10 +75,7 @@ Recorder::Recorder(ros::NodeHandle& nh,const std::string& topic_scan, std::strin
     }
 }     
 
-
-
-
-
+// class: RecorderAuto
 
 bool RecorderAuto::guard(){
     ros::Duration diff=ros::Time::now()-last_time_record;
@@ -91,7 +87,7 @@ Recorder(nh,topic_scan,path_dir_data),freq_hz(freq_hz){
     this->last_time_record = ros::Time::now();
 }
 
-
+// class: RecorderEvent
 
 bool RecorderEvent::guard(){
     if(trig_record){
