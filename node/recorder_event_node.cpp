@@ -1,5 +1,7 @@
 #include <ros_lidar_recorder/recorder.hpp>
 
+#define PARAM_NAME_PATH_DATA "path_data"
+
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "recorder_event");
