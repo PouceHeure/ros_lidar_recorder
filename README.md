@@ -1,10 +1,10 @@
 # ros_lidar_recorder 
 
-![tag:status:status:production](https://raw.githubusercontent.com/PouceHeure/markdown_tags/master/tags/status/status_production.png)
+![tag:status:status:production](https://raw.githubusercontent.com/PouceHeure/markdown_tags/v1.0/tags/status/status_production/status_production_green.png)
 
-![tag:category:robotic](https://raw.githubusercontent.com/PouceHeure/markdown_tags/master/tags/category/robotic.png)
-![tag:lib:ROS](https://raw.githubusercontent.com/PouceHeure/markdown_tags/master/tags/lib/ROS.png)
-![tag:language:cpp](https://raw.githubusercontent.com/PouceHeure/markdown_tags/master/tags/language/cpp.png)
+![tag:category:robotic](https://raw.githubusercontent.com/PouceHeure/markdown_tags/v1.0/tags/category/robotic/robotic_blue.png)
+![tag:lib:ROS](https://raw.githubusercontent.com/PouceHeure/markdown_tags/v1.0/tags/lib/ROS/ROS_blue.png)
+![tag:language:cpp](https://raw.githubusercontent.com/PouceHeure/markdown_tags/v1.0/tags/language/cpp/cpp_blue.png)
 
 Create csv file from LaserScan data.
 
