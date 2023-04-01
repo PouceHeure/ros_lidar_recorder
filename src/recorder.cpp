@@ -79,7 +79,11 @@ Recorder::Recorder(ros::NodeHandle& nh,const std::string& topic_scan, std::strin
 
 bool RecorderAuto::guard(){
     ros::Duration diff=ros::Time::now()-last_time_record;
-    return diff.toSec() >= 1.0/this->freq_hz;
+    if(diff.toSec() >= 1.0/this->freq_hz){
+        last_time_record = ros::Time::now();
+        return true;
+    }
+    return false;
 }
 
 RecorderAuto::RecorderAuto(ros::NodeHandle& nh,const std::string& topic_scan, std::string& path_dir_data,int freq_hz):
